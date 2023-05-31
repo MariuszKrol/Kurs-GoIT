@@ -49,7 +49,34 @@ function mojaFunkcja(id) {
         element2.innerHTML = informacja;
     }
       
-    }
+}
 
+///function greet(name2) {
+    ///console.log(`Pozdrawiam ${name2}.`);
+   /// return name2;
+///}
+
+///function registerGuest(name, callback){
+    ///console.log(`Rejestracja gościa ${name}.`);
+   /// callback(name);
+///}
+
+///greet("Kiwi");
+///console.log(greet("Kiwi"));
+///console.log(greet)
+
+///registerGuest("Mango", greet);
+
+function processCall(recipient) {
     
-   
+    const isRecipenAvailable = Math.random() > 0.5;
+
+    if (!isRecipenAvailable) {
+        console.log (`Abonent ${recipient} jest niedostepny, zostaw wiadomość. `);
+        
+    }else {
+        console.log(`Łączenie z ${recipient}, prosze czekac...`)
+    }
+}
+
+processCall("Mango");
